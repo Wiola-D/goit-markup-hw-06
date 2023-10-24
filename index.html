@@ -428,60 +428,85 @@ u<!DOCTYPE html>
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
-        <div>
-          <h3 class="modal-title">
-            Leave your contacts and we will call you back
-          </h3>
-          <form class="modal-form">
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="modal-form">
             <label class="modal-label" for="user-name">Name</label>
-            <input
-              class="modal-input"
-              id="user-name"
-              typ="text"
-              name="name"
-              required
-            />
+            <div class="modal-section">
+              <input
+                class="modal-input"
+                id="user-name"
+                typ="text"
+                name="user-name"
+                required
+              />
+              <svg width="18" height="24" class="modal-svg">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form">
             <label class="modal-label" for="user-phone">Phone</label>
-            <input
-              class="modal-input"
-              id="user-phone"
-              typ="tel"
-              name="phone"
-              required
-              minlength="3"
-            />
+            <div class="modal-section">
+              <input
+                class="modal-input"
+                id="user-phone"
+                typ="tel"
+                name="phone"
+                required
+                minlength="3"
+              />
+              <svg width="18" height="24" class="modal-svg">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form">
             <label class="modal-label" for="user-email">Email</label>
-            <input
-              class="modal-input"
-              id="user-email"
-              typ="email"
-              name="email"
-              required
-            />
-            <label class="modal-label" for="id-comment">Comment</label>
+            <div class="modal-section">
+              <input
+                class="modal-input"
+                id="user-email"
+                typ="email"
+                name="email"
+                required
+              />
+              <svg width="18" height="24" class="modal-svg">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-textarea">
+            <label class="modal-label" for="user-comment"> Comment </label>
             <textarea
-              class="modal-input modal-textarea"
-              id="id-comment"
+              class="textarea-a"
+              id="user-comment"
               rows="5"
-              name="comment"
+              name="user-comment"
               resize="none"
               placeholder="Text input"
             ></textarea>
-          </form>
-          <section class="checkbox-section">
+          </div>
+          <div class="checkbox-section">
             <input
-              class="checkbox-pp"
-              id="checkbox-pp"
-              name="checkbox"
+              class="checkbox-pp visually-hidden"
+              id="user-privacy"
+              name="user-privacy"
               type="checkbox"
+              value="true"
             />
-            <label for="checkbox-pp" class="privacy-policy-title">
-              I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></label
-            >
-          </section>
+            <label for="user-privacy" class="privacy-policy-title">
+              <span class="privacy-link"
+                ><svg>
+                  <use href="./images/icons.svg#icon-Checkbox"></use></svg
+              ></span>
+              I accept the terms and conditions of the<a href=""
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
           <button class="button-send" type="submit">Send</button>
-        </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
