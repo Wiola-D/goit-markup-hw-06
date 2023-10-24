@@ -640,3 +640,54 @@ img {
     scale: 4;
   }
 }
+/*zadanie 6*/
+.subscribe-form {
+  display: flex;
+  margin-left: 80px;
+}
+.subscribe-label {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe-input {
+  width: 262px;
+  height: 40px;
+  margin-top: 16px;
+  margin-right: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: var(--brand-color);
+  padding-left: 16px;
+}
+.subscribe-input::placeholder {
+  color: var(--WHITE, #fff);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.48px;
+}
+.subscribe-titel {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.subscribe-button {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--logo-color);
+  width: 165px;
+  height: 40px;
+}
+.button-sub {
+  margin-top: auto;
+}
