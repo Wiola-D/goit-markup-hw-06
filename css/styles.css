@@ -630,7 +630,6 @@ img {
   animation-name: scal;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-fill-mode: alternate;
   animation-iteration-count: 1;
 }
 @keyframes scal {
@@ -680,7 +679,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -779,13 +778,13 @@ img {
 .checkbox-section {
   margin-bottom: 24px;
 }
-.checkbox-pp::before {
+.checkbox-pp {
   width: 16px;
   height: 16px;
   stroke-width: 1px;
   stroke: rgba(46, 47, 66, 0.4);
 }
-.checkbox-pp::after:checked .svg-chcecked {
+.user-privacy .svg-checked:checked {
   background-color: var(--ocean);
   border: none;
   fill: var(--grey);
