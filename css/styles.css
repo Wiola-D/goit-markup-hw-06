@@ -647,12 +647,10 @@ img {
 .subscribe-form {
   display: flex;
 }
-.subscribe-label {
-  gap: 24px;
-}
 .subscribe-input {
   width: 264px;
   height: 40px;
+  gap: 24px;
   border: 1px solid #fff;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -662,7 +660,6 @@ img {
   letter-spacing: 0.04em;
   padding-left: 16px;
   color: #ffffff;
-  gap: 24px;
 }
 .subscribe-input::placeholder {
   color: var(--WHITE, #fff);
@@ -751,7 +748,7 @@ img {
   fill: var(--logo-color);
 }
 .modal-textarea {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .textarea-a {
   width: 100%;
@@ -810,13 +807,12 @@ img {
   height: 15px;
 }
 .privacy-link {
-  color: var(--brand-color);
+  color: var(--logo-color);
 }
 .button-send {
   display: block;
   min-width: 169px;
   height: 56px;
-
   box-sizing: content-box;
   margin: auto;
   font-size: 16px;
