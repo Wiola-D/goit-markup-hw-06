@@ -647,6 +647,10 @@ img {
 .subscribe-form {
   display: flex;
 }
+.subscribe-label {
+  display: flex;
+  gap: 24px;
+}
 .subscribe-input {
   display: flex;
   width: 264px;
