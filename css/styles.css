@@ -628,7 +628,7 @@ img {
 }
 .is-hidden {
   animation-name: scal;
-  animation-duration: 2s;
+  animation-duration: 1500ms;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
@@ -636,7 +636,7 @@ img {
   0% {
     scale: 1;
   }
-  50% {
+  90% {
     scale: 4;
   }
 }
@@ -648,6 +648,7 @@ img {
   display: flex;
 }
 .subscribe-input {
+  display: flex;
   width: 264px;
   height: 40px;
   gap: 24px;
